@@ -127,8 +127,19 @@ header {
     padding: 1rem;
     border-bottom: 1px solid var(--border-color);
     display: flex;
-    align-items: center;
     gap: 1rem;
+}
+
+.title-section {
+    flex: 1 1 auto;
+}
+
+.namespace-badge {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    background: var(--background-color);
+    border-radius: 0.25rem;
+    color: var(--text-secondary);
 }
 
 /* 🚥 Indicateurs de statut */
@@ -139,11 +150,11 @@ header {
 }
 
 .status-icon {
-    display: inline-flex;
-    align-items: center;
+    display: inline;
     padding: 4px 8px;
     border-radius: 4px;
     font-size: 0.9em;
+    line-height: normal;
 }
 .status-ok {
     background-color: var(--success-color);
@@ -156,14 +167,6 @@ header {
 /* 📝 Contenu des cartes */
 .card-content {
     padding: 1rem;
-}
-
-.namespace-badge {
-    font-size: 0.75rem;
-    padding: 0.25rem 0.5rem;
-    background: var(--background-color);
-    border-radius: 0.25rem;
-    color: var(--text-secondary);
 }
 
 .info-group {
